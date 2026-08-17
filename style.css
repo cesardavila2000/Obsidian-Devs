@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0910; /* Fondo oscuro / morado místico */
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA SUPERIOR ESTILO FIVERR */
+.navbar {
+    background-color: #181226;
+    border-bottom: 1px solid #4a2873;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.nav-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b873ef; /* Morado neón estilo cristal */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-selector {
+    background-color: #0b0910;
+    color: #f8fafc;
+    border: 1px solid #4a2873;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-nav-unite {
+    background-color: #6b21a8; /* Morado fuerte */
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-nav-unite:hover {
+    background-color: #581c87;
+}
+
+@keyframes animacionCristal {
+    0% {
+        transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
+        filter: drop-shadow(0 0 10px #b873ef);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-25px) rotate(5deg) scale(1.08);
+        filter: drop-shadow(0 0 25px #d946ef); /* Un brillo más intenso y morado/fucsia */
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
+        filter: drop-shadow(0 0 10px #b873ef);
+        opacity: 0.2;
+    }
+}
+
+.cristal-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 160px;
+    z-index: -1;
+    /* Aplicamos la animación con una duración de 5 segundos, fluida e infinita */
+    animation: animacionCristal 5s ease-in-out infinite;
+    user-select: none;
+    pointer-events: none;
+}

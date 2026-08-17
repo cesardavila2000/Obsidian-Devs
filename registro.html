@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DevP2P Latam - Selección de Usuario</title>
+ <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h1 id="tituloRegistro">DevP2P Latam</h1>
+        <p id="textoDescripcion">Selecciona cómo deseas registrarte en esta primera fase para configurar tu perfil:</p>
+        
+        <div class="role-buttons">
+<a href="index_programador.html" style="text-decoration:none;">
+<button class="btn-role btn-programador" id="btnProgramador" onclick="seleccionarRol('Programador')">Soy Programador</button>
+
+</a>
+<a href="index_cliente.html" style="text-decoration:none;">
+<button class="btn-role btn-cliente" id="btnCliente" onclick="seleccionarRol('Cliente')">Soy Cliente</button>
+</a>
+
+        </div>
+    </div>
+
+    <script>
+        function seleccionarRol(rol) {
+            alert("Has seleccionado registrarte como: " + rol);
+
+
+        }
+window.onload = function() {
+    let idiomaGuardado = localStorage.getItem("idiomaElegido");
+
+    if (idiomaGuardado === 'en') {
+        document.getElementById("tituloRegistro").innerText = "DevP2P Latam";
+        document.getElementById("textoDescripcion").innerText = "Select how you want to register in this first phase to set up your profile:";
+        document.getElementById("btnProgramador").innerText = "I am a Developer";
+        document.getElementById("btnCliente").innerText = "I am a Client";
+    }
+};
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0910; /* Un negro/morado muy oscuro de fondo */
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-container {
+    background-color: #181226; /* Un tono morado oscuro / pizarra */
+    border: 1px solid #4a2873; /* Un borde sutil en tonos morados */
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+h1 {
+    color: #b873ef; /* Un morado claro/neón estilo cristal */
+    margin-top: 0;
+    font-size: 24px;
+}
+.btn-programador {
+    background-color: #6b21a8; /* Morado fuerte */
+    color: white;
+}
+
+.btn-programador:hover {
+    background-color: #581c87; /* Un morado más oscuro al pasar el mouse */
+}
+.role-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Esto crea el espacio exacto entre un botón y otro */
+    margin-top: 20px;
+}
+.btn-role {
+    width: 100%;          /* Ocupa todo el ancho de la tarjeta */
+    padding: 14px;        /* Espacio interno para que se vean grandes */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Por si usas etiquetas <a> */
+    transition: background-color 0.2s, transform 0.1s;
+}
+.btn-role:hover {
+    transform: translateY(-2px);
+}
+.btn-cliente {
+    background-color: #191970; /* Verde brillante o el color que prefieras */
+    color: white;
+}
+
+.btn-cliente:hover {
+   background-color: #172554;
+}
